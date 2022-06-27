@@ -3,5 +3,7 @@
 
   <% if @user %>
     Logueado como <%= @user.email %>
+
+    <%= button_to "Salir", logout_path, method: :delete %>
   <% end %>
 </div>
