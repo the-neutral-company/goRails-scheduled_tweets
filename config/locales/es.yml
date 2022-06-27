@@ -1,0 +1,13 @@
+es:
+  activerecord:
+    models:
+      user: Usuario
+    attributes:
+      user:
+        email: "Correo"
+        password: "Contraseña"
+        password_confirmation: "Confirmación de contraseña"
+  errors:
+    format: '%{message} %{attribute}'
+    messages:
+      blank: 'Debe ingresar un/a'
