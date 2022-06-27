@@ -1,0 +1,22 @@
+<h1>Registrarse</h1>
+
+<!--<%= @user %>-->
+
+<%= form_with model: @user, url: sign_up_path do |form| %>
+  <div class="mb-3">
+    <%= form.label :email, 'Correo' %>
+    <%= form.text_field :email, class: "form-control", placeholder: 'sergio@gmail.com' %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :password, 'Contraseña' %>
+    <%= form.password_field :password, class: "form-control", placeholder: 'contraseña' %>
+  </div>
+  <div class="mb-3">
+    <%= form.label :password_confirmation, 'Confirmar contraseña' %>
+    <%= form.password_field :password_confirmation, class: "form-control", placeholder: 'contraseña' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Registrarse", class: 'btn btn-primary' %>
+  </div>
+<% end %>
